@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery – MURADHI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="index.html" class="logo">MURADHI</a>
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('menu')">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html" class=on>Gallery</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="panier.html" class="cart">Shopping Cart <b id="cart-count">0</b></a>
+  </nav>
+</header>
+<main>
+  <h1>Gallery</h1>
+  <input id="search" placeholder="Search for a product…">
+  <div class="filters">
+    <button class="active" data-cat="tous">All</button>
+    <button data-cat="habillement">Clothing</button>
+    <button data-cat="accessoires">Accessories</button>
+    <button data-cat="parfums">Perfumes</button>
+    <button data-cat="perruques">Wigs</button>
+    <button data-cat="chaussures">Shoes</button>
+  </div>
+  <div id="liste-produits" class="grid"></div>
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <span id="fermer" class="fermer">✕</span>
+      <div id="modal-contenu"></div>
+    </div>
+  </div>
+</main>
+<footer>
+  <strong>MURADHI</strong> – Fashion, Beauty, and Style. Kampala, Uganda.<br>
+  <a href="contact.html">Contact</a> 
+  <a href="faq.html">FAQ</a> 
+  <a href="vendeur.html">Sell on MURADHI</a><br>
+  © 2026 MURADHI
+</footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

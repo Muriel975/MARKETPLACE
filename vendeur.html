@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devenir vendeur – MURADHI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="index.html" class="logo">MURADHI</a>
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('menu')">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="faq.html">FAQ</a>
+    <a href="vendeur.html" class=on>Become a Salesperson</a>
+    <a href="contact.html">Contact</a>
+    <a href="panier.html" class="cart">Shopping Cart <b id="cart-count">0</b></a>
+  </nav>
+</header>
+<main>
+
+<h1>Become a Salesperson</h1>
+<p class="lead">Sell your products to all MURADHI customers. Registration is free: send us your request.</p>
+<div class="two">
+<form id="form-vendeur" class="form">
+  <input id="boutique" placeholder="Your Store Name" required>
+  <input id="vnom" placeholder="Your name" required>
+  <input id="tel" type="tel" placeholder="Phone / WhatsApp" required>
+  <select id="vcat">
+    <option>Clothing</option>
+    <option>Accessories (bags, jewelry)</option>
+    <option>Perfumes</option>
+    <option>Wigs</option>
+    <option>Chaussures</option>
+  </select>
+  <textarea id="vdesc" rows="4" placeholder="What do you sell? Where are you located?"></textarea>
+  <button type="submit">Submit my request</button>
+</form>
+<div class="box">
+  <h3>How It Works</h3>
+  <p>1. You submit the request.
+    <br>2. We'll contact you on WhatsApp.
+    <br>3. Your products appear in the gallery.
+  </p>
+</div>
+</div>
+</main>
+<footer>
+  <strong>MURADHI</strong> – Fashion, Beauty, and Style. Kampala, Uganda.<br>
+  <a href="contact.html">Contact</a> 
+  <a href="faq.html">FAQ</a> 
+  <a href="vendeur.html">Sell on MURADHI</a><br>
+  © 2026 MURADHI
+</footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

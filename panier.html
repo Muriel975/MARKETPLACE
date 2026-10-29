@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panier – MURADHI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="index.html" class="logo">MURADHI</a>
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('menu')">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="panier.html" class="cart on">Shopping Cart <b id="cart-count">0</b></a>
+  </nav>
+</header>
+<main>
+<h1>My Cart</h1>
+<div id="zone-panier"></div>
+<div id="bas-panier" class="total" hidden>
+  <p>Total : 
+    <strong id="total">0 UGX</strong>
+  </p>
+  <button id="commander">Order via WhatsApp</button>
+  <button id="vider" class="ghost">Empty the shopping cart</button>
+</div>
+</main>
+<footer>
+  <strong>MURADHI</strong> – Fashion, Beauty, and Style. Kampala, Uganda.<br>
+  <a href="contact.html">Contact</a>  
+  <a href="faq.html">FAQ</a> 
+  <a href="vendeur.html">Sell on MURADHI</a><br>
+  © 2026 MURADHI
+</footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
