@@ -82,6 +82,17 @@ function ajouter(id) {
   toast("Added to cart");
 }
 
+// Diaporama des cartes promo : les photos glissent vers la gauche
+document.querySelectorAll(".pslide").forEach((piste, i) => {
+  const n = piste.children.length;
+  if (n < 2) return;
+  let k = 0;
+  setTimeout(() => setInterval(() => {
+    k = (k + 1) % n;
+    piste.style.transform = `translateX(-${k * 100}%)`;
+  }, 3000), i * 800);
+});
+
 /* ---------- Carte produit ---------- */
 const vignette = p => `
   <div class="thumb">
